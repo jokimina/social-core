@@ -11,7 +11,6 @@ class AliyunOAuth2(BaseOAuth2):
     AUTHORIZATION_URL = 'https://signin.aliyun.com/oauth2/v1/auth'
     ACCESS_TOKEN_URL = 'https://oauth.aliyun.com/v1/token'
     DEFAULT_SCOPE = ['openid', 'aliuid', 'profile']
-    REDIRECT_STATE = False
     ACCESS_TOKEN_METHOD = 'POST'
 
     def get_user_details(self, response):
